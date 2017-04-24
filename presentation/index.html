@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Modern Angular for the Java Developer</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/gists.css">
+	<link rel="stylesheet" href="css/theme/simple.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/github.min.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section id="title" data-background-color="#0D47A1" data-background-image="lib/images/title-bg.png" data-background-size="100%"
+			 data-background-position="bottom">
+				<h2>Modern Angular</h2>
+				<h4>for the</h4>
+				<h2>Java Developer</h2>
+				<br>
+				<p>@mikegeyser</p>
+				<p>Jozi JUG -April 2017</p>
+			</section>
+			<section id="introduction">
+				<div id="mike"></div>
+				<div id="bbd" class="fragment"></div>
+				<div id="geocities" class="fragment"></div>
+				<div id="languages" class="fragment"></div>
+				<div id="love-js" class="fragment"></div>
+				<div id="programmer-beard" class="fragment"></div>
+				<div id="frameworks" class="fragment"></div>
+			</section>
+			<section data-markdown>
+				<script type="text/template">
+					## Modern Angular? 
+					
+					AngularJS => Angular
+					<span class="fragment strikethrough" data-fragment-index="5">2</span>
+					<span class="fragment" data-fragment-index="5">2+</span>
+
+					<div class="fragment" data-fragment-index="1">No upgrade path!</div>
+					<div class="fragment" data-fragment-index="2">(wait. dont leave. please still love us.) </div>
+					<div class="fragment" data-fragment-index="3">There's totally an upgrade path</div>
+					<div class="fragment" data-fragment-index="4">Change npm 'namespace' to `@angular/*`</div>
+					<span class="fragment " data-fragment-index="6">**Angular 4**</span>
+					<div class="fragment" data-fragment-index="7">Wait, what WTF happened to 3?!</div>
+
+				</script>
+			</section>
+			<section>
+				<h2><i>It's just angular...</i></h2>
+				<br>
+				<a style="font-size: 14pt;" href="http://angularjs.blogspot.co.za/2017/01/branding-guidelines-for-angular-and.html">[Reference: Branding Guidelines for Angular and AngularJS]</a>
+			</section>
+			<section data-background-image="lib/images/raeg.jpeg" data-background-size="100%"></section>
+			<section>
+				<section><img src="lib/images/javascript_logo.png" alt="" style="border:0; box-shadow: none;" height="200px"></section>
+				<section>
+					<pre><code data-trim data-noescape>
+	>> 1.01 + 2.02
+	3.0300000000000002
+					</code></pre>
+				</section>
+				<section>
+					<pre><code data-trim data-noescape>
+	>> 1 / '1'
+	1
+
+	>> 1 * '1'
+	1
+
+	>> 1 - '1'
+	0
+
+	>> 1 + '1'
+	'11'
+					</code></pre>
+				</section>
+				<section>
+					<pre><code data-trim data-noescape>
+	>> parseInt('15');
+	15
+
+	>> parseInt('15 and a half');
+	15
+
+	>> parseInt('fifteen');
+	Nan
+
+	>> parseInt('015');
+	13
+
+	>> parseInt('015', 10);
+	15
+					</code></pre>
+				</section>
+				<section>
+					<pre><code data-trim data-noescape>
+	>> typeof []
+	object
+
+	>> typeof {}
+	object
+
+	>> [] + []
+	""
+
+	>> [] + {}
+	"[object Object]"
+
+	>> {} + []
+	0
+					</code></pre>
+				</section>
+				<section>
+					<pre><code data-trim data-noescape>
+	>> var arr = [10, 9, 8, 3, 2, 1, 0];
+
+	>> arr.sort()
+	[ 0, 1, 10, 2, 3, 8, 9 ]
+
+	>> for(var a in arr) { a; }
+	"6"
+					</code></pre>
+				</section>
+				<section>
+					<pre><code data-trim data-noescape>
+>> 'wtf' instanceof String
+false
+
+>> typeof 'wtf'
+'string'
+
+>> String('wtf') === 'wtf'
+true
+
+>> String('wtf') === new String('wtf')
+false
+
+>> String('wtf') == new String('wtf')
+true
+					</code></pre>
+				</section>
+				<section>
+					<pre><code data-trim data-noescape>
+	>> Array(16).join('wat' - 1) + " batman!"
+	"NaNNaNNaNNaNNaNNaNNaNNaNNaNNaNNaNNaNNaNNaNNaN batman!"
+					</code></pre>
+					<br>
+					
+				<img src="lib/images/watman.gif" alt="" style="border:0; box-shadow: none;" >
+					<br>
+					<a style="font-size: 14pt;" href="https://www.destroyallsoftware.com/talks/wat">[Reference: Destroy all software]</a>
+				</section>
+			<section>
+				<img src="lib/images/javaistojavascript.png" alt="" style="border:0; box-shadow: none;" >
+			</section>	
+			</section>
+			<section>
+				<img src="lib/images/angular2-logo.png" alt="" style="border:0; box-shadow: none;" height="200px">
+				<span style="font-size:200px;">+</span>
+				<img src="lib/images/typescript-logo.png" alt="" style="border:0; box-shadow: none;" height="200px">
+			</section>
+			<section>
+				<img src="lib/images/springboot-logo.png" alt="" style="border:0; box-shadow: none;" height="200px">
+				<span style="font-size:200px;">+</span>
+				<img src="lib/images/swagger-logo.png" alt="" style="border:0; box-shadow: none;" height="200px">
+			</section>
+			<section>
+				<img src="lib/images/todomvc.svg" alt="" style="border:0; box-shadow: none;">
+			</section>
+			<section>
+				<div style="position: relative;">
+					<img src="lib/images/sacrifice.jpg" alt="" style="border:0; box-shadow: none; " height="500px">
+					<div style="position: absolute; top: 0; left: 150px;">
+						<div>Small &#10004;</div>
+						<div>Fluffy &#10004;</div>
+						<div>Cute &#10004;</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h3>Questions?</h3>
+				<h4><i id="twitter"></i>@mikegeyser</h4>
+				<h4><i id="bbd-email"></i>michaelg@bbd.co.za</h4>
+				<h4><i id="github"></i>github.com/mikegeyser</h4>
+			</section>
+		</div>
+		<img id="bbd-logo" src="lib/images/bbd.png" />
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			history: true,
+
+			// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [{
+				src: 'plugin/markdown/marked.js'
+			}, {
+				src: 'plugin/markdown/markdown.js'
+			}, {
+				src: 'plugin/notes/notes.js',
+				async: true
+			}, {
+				src: 'plugin/highlight/highlight.js',
+				async: true,
+				callback: function () {
+					hljs.initHighlightingOnLoad();
+				}
+			}]
+		});
+	</script>
+</body>
+
+</html>
