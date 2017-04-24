@@ -18,11 +18,11 @@
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
-    "styles": [
-      "styles.css",
-      "../node_modules/todomvc-common/base.css",
-      "../node_modules/todomvc-app-css/index.css"
-    ],
+      "styles": [
+        "styles.css",
+        "../node_modules/todomvc-common/base.css",
+        "../node_modules/todomvc-app-css/index.css"
+      ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
@@ -31,11 +31,6 @@
       }
     }
   ],
-  "e2e": {
-    "protractor": {
-      "config": "./protractor.conf.js"
-    }
-  },
   "lint": [
     {
       "project": "src/tsconfig.app.json"
@@ -47,11 +42,6 @@
       "project": "e2e/tsconfig.e2e.json"
     }
   ],
-  "test": {
-    "karma": {
-      "config": "./karma.conf.js"
-    }
-  },
   "defaults": {
     "styleExt": "css",
     "component": {}

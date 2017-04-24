@@ -94,7 +94,7 @@
 		"description": "Todo footer"
 	},
 	"Complete": {
-		"prefix": "demo-html-complete",
+		"prefix": "demo-html-final",
 		"body": [
 			"<section class=\"todoapp\">",
 			"  ",

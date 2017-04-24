@@ -13,9 +13,12 @@ public class TodoController {
 
   TodoController() {
     this.todos = new ArrayList<Todo>();
-    this.todos.add(new Todo("Setup springboot", true));
-    this.todos.add(new Todo("Another test", false));
-    this.todos.add(new Todo("Do something", false));
+    this.todos.add(new Todo("Setup project", true));
+    this.todos.add(new Todo("List todos", false));
+    this.todos.add(new Todo("Create a todo", false));
+    this.todos.add(new Todo("Mark a todo as completed", false));
+    this.todos.add(new Todo("Edit a todo", false));
+    this.todos.add(new Todo("Delete a todo", false));
   }
 
   @ApiOperation(value = "", nickname = "List")

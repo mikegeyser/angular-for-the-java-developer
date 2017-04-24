@@ -4,8 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { TodoStore } from './todo.store';
-import { BASE_PATH, TodocontrollerApi } from './services';
 
 @NgModule({
   declarations: [
@@ -16,11 +14,7 @@ import { BASE_PATH, TodocontrollerApi } from './services';
     FormsModule,
     HttpModule
   ],
-  providers: [
-    { provide: BASE_PATH, useValue: "." },
-    TodocontrollerApi,
-    TodoStore
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

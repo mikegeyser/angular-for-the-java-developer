@@ -181,7 +181,7 @@
 		"description": "Get remaining todos in store"
 	},
 	"Module Complete": {
-		"prefix": "demo-module-complete",
+		"prefix": "demo-module-final",
 		"body": [
 			"import { BrowserModule } from '@angular/platform-browser';",
 			"import { NgModule } from '@angular/core';",
@@ -213,7 +213,7 @@
 		"description": "Module Complete"
 	},
 	"Component Complete": {
-		"prefix": "demo-component-complete",
+		"prefix": "demo-component-final",
 		"body": [
 			"import { Component } from '@angular/core';",
 			"import { TodoStore, Todo } from './todo.store';",
@@ -259,7 +259,7 @@
 		"description": "Component Complete"
 	},
 	"Store Complete": {
-		"prefix": "demo-store-complete",
+		"prefix": "demo-store-final",
 		"body": [
 			"import { Injectable } from '@angular/core';",
 			"import { Observable } from 'rxjs/Observable';",
